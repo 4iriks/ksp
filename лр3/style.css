@@ -1,0 +1,198 @@
+/* === Общие стили === */
+body {
+    background-color: rgb(240, 244, 248);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+/* === Меню === */
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    color: rgb(0, 102, 153);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* === Заголовки разделов товара === */
+h3.section-heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(200, 220, 240);
+    padding: 6px 12px;
+}
+
+/* === Краткое описание товара === */
+p.short-desc {
+    color: rgb(80, 80, 120);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* === Подробное описание товара === */
+p.full-desc {
+    color: rgb(60, 60, 80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* === Список характеристик === */
+ul.specs {
+    list-style-image: url('images/marker.png');
+    color: rgb(30, 80, 100);
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* === Подвал === */
+.footer {
+    color: #777;
+}
+
+/* === Фильтр каталога === */
+.filter-bar {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgb(220, 230, 245);
+    border-radius: 6px;
+}
+
+.filter-bar label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-bar select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* === Карточки товаров в каталоге === */
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin: 10px 15px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-card img {
+    border-radius: 4px;
+}
+
+.product-card .product-name {
+    font-weight: bold;
+    margin: 8px 0 4px;
+}
+
+.product-card .product-price {
+    color: rgb(0, 120, 60);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 0 8px;
+}
+
+/* === Кнопки === */
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-add {
+    background-color: rgb(0, 120, 180);
+}
+
+.btn-add:hover {
+    background-color: rgb(0, 100, 150);
+}
+
+.btn-pay {
+    background-color: rgb(40, 160, 60);
+}
+
+.btn-pay:hover {
+    background-color: rgb(30, 130, 50);
+}
+
+.btn-clear {
+    background-color: rgb(180, 60, 60);
+}
+
+.btn-clear:hover {
+    background-color: rgb(150, 40, 40);
+}
+
+.btn-remove {
+    background-color: rgb(200, 80, 80);
+    padding: 4px 10px;
+    font-size: 12px;
+}
+
+.btn-remove:hover {
+    background-color: rgb(170, 50, 50);
+}
+
+/* === Корзина === */
+.cart-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 240);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cart-section h3 {
+    margin-top: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cart-buttons {
+    margin-top: 10px;
+}
+
+.cart-buttons .btn {
+    margin-right: 10px;
+}
