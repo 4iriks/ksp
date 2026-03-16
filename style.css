@@ -1,0 +1,70 @@
+/* === Общие стили === */
+body {
+    background-color: rgb(240, 244, 248);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #333;
+}
+
+/* === Меню === */
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.menu li a {
+    color: rgb(0, 102, 153);
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+/* === Заголовки разделов товара === */
+h3.section-heading {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(200, 220, 240);
+    padding: 6px 12px;
+}
+
+/* === Краткое описание товара === */
+p.short-desc {
+    color: rgb(80, 80, 120);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/* === Подробное описание товара === */
+p.full-desc {
+    color: rgb(60, 60, 80);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* === Список характеристик === */
+ul.specs {
+    list-style-image: url('images/marker.png');
+    color: rgb(30, 80, 100);
+    font-size: 15px;
+    line-height: 28px;
+}
+
+/* === Подвал === */
+.footer {
+    color: #777;
+}
