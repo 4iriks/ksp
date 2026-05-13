@@ -8,6 +8,20 @@ const products = [
     { id: 3, name: "Google Pixel 8 Pro", price: 84990, category: "google" }
 ];
  
+// Стрелочная функция: сохранение корзины в LocalStorage
+const saveCart = () => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+};
+
+// Стрелочная функция: загрузка корзины из LocalStorage
+const loadCart = () => {
+    const savedCart = localStorage.getItem("cart");
+
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+    }
+};
+
 // Стрелочная функция: подсчёт общей суммы корзины
 const calculateTotal = () => {
     let total = 0;
@@ -18,18 +32,21 @@ const calculateTotal = () => {
 // Стрелочная функция: добавление товара в корзину
 const addToCart = (product) => {
     cart.push(product);
+    saveCart();
     renderCart();
 };
 
 // Стрелочная функция: удаление товара из корзины по индексу
 const removeFromCart = (index) => {
     cart.splice(index, 1);
+    saveCart();
     renderCart();
 };
 
 // Стрелочная функция: очистка корзины
 const clearCart = () => {
     cart = [];
+    saveCart();
     renderCart();
 };
 
@@ -91,6 +108,10 @@ const filterProducts = (category) => {
 
 // Инициализация после загрузки DOM
 document.addEventListener("DOMContentLoaded", () => {
+    // Загрузка сохранённой корзины при открытии страницы
+    loadCart();
+    renderCart();
+
     // Обработчик фильтра
     const filterSelect = document.querySelector("#category-filter");
     if (filterSelect) {
