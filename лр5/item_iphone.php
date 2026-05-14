@@ -1,0 +1,69 @@
+<?php
+require_once __DIR__ . '/functions.php';
+requireAuth();
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>iPhone 15 Pro — Каталог смартфонов</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="profile.php">Личный кабинет</a></li>
+    <li><a href="catalog.php">Каталог</a></li>
+    <li><a class="logout-link" href="logout.php">Выход</a></li>
+</ul>
+
+<p class="user-panel">Вы вошли как: <strong><?= e(currentUserName()) ?></strong></p>
+
+<hr>
+
+<h2>iPhone 15 Pro</h2>
+
+<a href="images/iphone 15 pro.jpg" target="_blank">
+    <img src="images/iphone 15 pro.jpg" width="300" height="300" alt="iPhone 15 Pro">
+</a>
+
+<h3 class="section-heading">Краткое описание товара</h3>
+<p class="short-desc">iPhone 15 Pro — флагманский смартфон Apple 2023 года с титановым корпусом, процессором A17 Pro и портом USB-C. Сочетает премиальные материалы, высокую производительность и продвинутую систему камер.</p>
+
+<h3 class="section-heading">Характеристики</h3>
+<ul class="specs">
+    <li>Процессор: Apple A17 Pro (3 нм)</li>
+    <li>Дисплей: 6.1" Super Retina XDR OLED, 2556×1179, 120 Гц</li>
+    <li>ОЗУ: 8 ГБ</li>
+    <li>Память: 128 / 256 / 512 ГБ / 1 ТБ</li>
+    <li>Основная камера: 48 МП + 12 МП + 12 МП</li>
+    <li>Фронтальная камера: 12 МП</li>
+    <li>Аккумулятор: 3274 мАч</li>
+    <li>ОС: iOS 17</li>
+    <li>Корпус: титан / стекло</li>
+    <li>Порт: USB-C (USB 3)</li>
+</ul>
+
+<h3 class="section-heading">Подробное описание товара</h3>
+<p class="full-desc">iPhone 15 Pro — флагманский смартфон компании Apple, выпущенный в 2023 году. Устройство оснащено передовым процессором Apple A17 Pro, изготовленным по 3-нанометровому техпроцессу. Корпус выполнен из титана, что делает его одновременно лёгким и прочным. Смартфон впервые в линейке iPhone получил порт USB-C с поддержкой стандарта USB 3, а также настраиваемую кнопку Action.</p>
+
+<p><strong>Цена: 129 990 руб.</strong></p>
+<button class="btn btn-add" data-name="iPhone 15 Pro" data-price="129990">Добавить в корзину</button>
+
+<div class="cart-section">
+    <h3>Корзина</h3>
+    <div id="cart-list"></div>
+    <div id="cart-total" class="cart-total">Итого: 0 руб.</div>
+    <div class="cart-buttons">
+        <button class="btn btn-pay" id="btn-pay">Оплатить</button>
+        <button class="btn btn-clear" id="btn-clear">Очистить корзину</button>
+    </div>
+</div>
+
+<hr>
+
+<p class="footer"><small>&copy; 2026 Каталог смартфонов. Все права защищены.</small></p>
+
+<script src="script.js"></script>
+</body>
+</html>
