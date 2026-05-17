@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "Admin",
+        "email": "admin@test.com",
+        "password_hash": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi"
+    },
+    {
+        "id": 2,
+        "name": "User",
+        "email": "user@test.com",
+        "password_hash": "$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi"
+    }
+]
+
