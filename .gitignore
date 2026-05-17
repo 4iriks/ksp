@@ -1,2 +1,4 @@
 .venv/
-
+.claude/
+node_modules/
+dist/
